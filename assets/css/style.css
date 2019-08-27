@@ -1,0 +1,68 @@
+body {
+    background-image: url("../images/light-grey-terrazzo.png");
+}
+
+
+h1 {
+    color: #ffffff;
+    background-color: orange;
+    font-size: 36px;
+    width: 310px;
+    height: 75px;
+    padding: 8px;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    margin: 2px;
+}
+
+.content {
+    color: green;
+    background-color: peachpuff;
+    width: 450px;
+    height: 350px;
+    margin-left: 10px;
+}
+
+.random {
+    background-color: green;
+    font-size: 50px;
+    width: 200px;
+    height: 75px;
+    margin: 10px;
+}
+
+.stats {
+    background-color: turquoise;
+    width: 5px;
+    height: 75px;
+    float: left;
+    margin-left: 10px;
+}
+
+.crystal {
+    height: 150px;
+    width: 150px;
+    margin:0px, 0px, 10px, 10px;
+}
+
+.total {
+    color: #ffffff;
+    background-color: teal;
+    width: 200px;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.score {
+    color: #ffffff;
+    background-color: teal; 
+    width: 208px;
+    height: 80px;
+    margin: 10px;
+
+}
+
