@@ -17,11 +17,13 @@
 <body>
   <script src="assets/javascript/game.js"></script>
 
-  <h1>Crystals Collector!</h1>
+  <header>
+    <h1 id="header">Crystals Collector!</h1>
+  </header>
 
   <p> MAKE SURE TO LINK TO PORTFOLIO</p>
 
-  <div class=content>
+  <div class="content">
     <br>
     <p>You will be given a random number at the start of the game.</p>
     <br>
@@ -34,21 +36,25 @@
     <p>Each time when the game starts, the game will change the values of each crystal.</p>
   </div>
   
-  <div class=random></div>
+  <div class="random"></div>
 
-  <div class=stats>
-      <p>Wins: </p>
-      <p>Losses: </p>
-  </div>
-
-  <img class=crystal src="assets/images/red-crystal.jpg" alt="red cyrstal">
-  <img class=crystal src="assets/images/blue-crystal.jpg" alt="blue cyrstal">
-  <img class=crystal src="assets/images/yellow-crystal.jpg" alt="yellow cyrstal">
-  <img class=crystal src="assets/images/green-crystal.jpg" alt="green cyrstal">
-
-  <p class=total>Your total score is:</p>
+  <div class="stats">
+      <p class="message"></p>
+      <p class="wins"></p>
+      <p class="losses"></p>
+  </div> 
   
-  <div class=score></div>
+  <br>
+  
+  <img class="crystal first" id="red" src="assets/images/red-crystal.jpg" alt="red cyrstal">
+  <img class="crystal" id="blue" src="assets/images/blue-crystal.jpg" alt="blue cyrstal">
+  <img class="crystal" id="yellow" src="assets/images/yellow-crystal.jpg" alt="yellow cyrstal">
+  <img class="crystal" id="green" src="assets/images/green-crystal.jpg" alt="green cyrstal">
+
+
+  <p class="total">Your total score is:</p>
+  
+  <div class="score"></div>
 
 
 </body>

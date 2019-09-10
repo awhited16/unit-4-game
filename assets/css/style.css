@@ -3,7 +3,7 @@ body {
 }
 
 
-h1 {
+#header {
     color: #ffffff;
     background-color: orange;
     font-size: 36px;
@@ -12,47 +12,60 @@ h1 {
     padding: 8px;
     margin: 10px;
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 p {
     font-family: 'PT Serif', serif;
-    margin: 2px;
+    margin: 5px;
+    font-weight: bold;
 }
 
 .content {
     color: green;
     background-color: peachpuff;
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    height: 400px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .random {
     background-color: green;
     font-size: 50px;
-    width: 200px;
-    height: 75px;
-    margin: 10px;
+    width: 325px;
+    height: 150px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .stats {
     background-color: turquoise;
-    width: 5px;
-    height: 75px;
+    width: 100px;
+    height: 150px;
     float: left;
     margin-left: 10px;
 }
 
+.first {
+    clear: both;
+    float: left;
+}
+
 .crystal {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     margin:0px, 0px, 10px, 10px;
+    float: left;
 }
 
 .total {
+    clear: both;
     color: #ffffff;
     background-color: teal;
-    width: 200px;
+    width: 250px;
     padding: 4px;
     margin-left: 10px;
 }
@@ -60,9 +73,10 @@ p {
 .score {
     color: #ffffff;
     background-color: teal; 
-    width: 208px;
+    width: 238px;
     height: 80px;
     margin: 10px;
-
+    font-size: 50px;
+    padding: 10px;
 }
 
