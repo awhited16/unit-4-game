@@ -9,8 +9,3 @@
     - reset random number
     - reset random values of crystal
     - reset score to 0 and hide display
-
-
-function run
-    function check
-    function reset

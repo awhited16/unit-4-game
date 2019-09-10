@@ -1,21 +1,20 @@
 $(document).ready(function() {
 
-
-    //List of starting number of wins and losses
+    // list of starting number of wins and losses
     var wins = 0;
     var losses = 0;
 
-    function run () {
+    // set inititial variables for score and random number
+    var score = 0;
+    var randomNumber = Math.floor(Math.random()*(120 - 19 + 1) + 19);
 
-        // set variables
-        var score = 0;
-        var randomNumber = Math.floor(Math.random()*(120 - 19 + 1) + 19);
+    //generate random numbers for crystals
+    var redNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+    var blueNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+    var yellowNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+    var greenNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
 
-        //generate random numbers for crystals
-        var redNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
-        var blueNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
-        var yellowNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
-        var greenNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+    function runGame () {
 
         // display variables
         $(".wins").html("<p>Wins: " + wins + "</p><br>");
@@ -65,33 +64,37 @@ $(document).ready(function() {
             console.log("randomNumber: " + randomNumber);
             console.log("score: " + score);
         });
-   
-        function reset () {
 
-            // start score as 0 and generate random number
-            score = 0;
-            randomNumber = Math.floor(Math.random()*(120 - 19 + 1) + 19);
-
-            run ();
-        }
 
         function check () {
             if (score === randomNumber) {
                 $(".message").html("<p>You won!!</p><br>");
                 wins++;
-                reset ();
+                score = 0;
+                randomNumber = Math.floor(Math.random()*(120 - 19 + 1) + 19);
+                redNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                blueNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                yellowNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                greenNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                runGame ();
             }
             
             if (score > randomNumber) {
                 $(".message").html("<p>You lost!!</p><br>");
                 losses++;
-                reset ();
+                score = 0;
+                randomNumber = Math.floor(Math.random()*(120 - 19 + 1) + 19);
+                redNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                blueNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                yellowNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                greenNumber = Math.floor(Math.random()*(12 - 1 + 1) + 1);
+                runGame ();
             }
             
         }
     
     }
 
-    run ()
+    runGame ()
 
 });
