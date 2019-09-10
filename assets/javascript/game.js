@@ -33,7 +33,7 @@ $(document).ready(function() {
         console.log(greenNumber);
 
         // add number on click
-        $("#red").click(function() {
+        $("#red").unbind("click").click(function() {
             score = score + redNumber;
             $(".score").html("<h1>" + score + "<h1>");
             check ();
@@ -41,7 +41,7 @@ $(document).ready(function() {
             console.log("score: " + score);
         });
 
-        $("#blue").click(function() {
+        $("#blue").unbind("click").click(function() {
             score = score + blueNumber;
             $(".score").html("<h1>" + score + "<h1>");
             check ();
@@ -49,7 +49,7 @@ $(document).ready(function() {
             console.log("score: " + score);
         });
 
-        $("#yellow").click(function() {
+        $("#yellow").unbind("click").click(function() {
             score = score + yellowNumber;
             $(".score").html("<h1>" + score + "<h1>");
             check ();
@@ -57,7 +57,7 @@ $(document).ready(function() {
             console.log("score: " + score);
         });
 
-        $("#green").click(function() {
+        $("#green").unbind("click").click(function() {
             score = score + greenNumber;
             $(".score").html("<h1>" + score + "<h1>");
             check ();
